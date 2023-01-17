@@ -1,0 +1,66 @@
+File Descriptions:
+
+~~~~~~~~~~~~~~~~~~~~~
+tAgeRating.csv
+This table contains all the different age ratings for the games I could find and indicates what different rating organizations think games should be rated for content purposes (ex. Teen/E)
+
+columns:
+gameID-used to match with other gameIDs
+RatingOrg-The ratings organization
+Rating-The provided Rating
+Age Above-The suggested minimum age that the game would be appropriate for
+~~~~~~~~~~~~~~~~~~~~~
+tGameGenre.csv
+seperate from the genre provided in the original kaggle dataset
+each game can have more than 1 genre in this table
+
+columns:
+gameID-used to match with other gameIDs
+genre-All genres the game was found to match
+~~~~~~~~~~~~~~~~~~~~~
+tGameID.csv
+This contains a portion of the data from the kaggle spread sheet.
+
+kglID-used to match with tGameSales and title breakdown
+gameID-used to match with other gameIDs
+Title-Each game title (cleaned)
+Year-Year the game was released
+Publisher-Game publisher
+Main Genre-main genre provided by the kaggle data set
+~~~~~~~~~~~~~~~~~~~~~
+tGameKeywords.csv
+Each game can have multiple keywords
+
+gameID-used to match with other gameIDs
+Keyword-Associated keyword
+~~~~~~~~~~~~~~~~~~~~~
+tGameSales.csv
+This is the rest of the kaggle dataset which includes the rank of the game (in terms of total sales) platform and region
+
+kglID-used to match with tGameID
+Rank-Integer indicating the rank in terms of totals sales for the game on the specific console globally
+Platform-Console the sales numbers relate to
+Region-Region the sales numbers are from
+Sale-number of sales in millions
+~~~~~~~~~~~~~~~~~~~~~
+tPlatformMaker.csv
+This provides the full name for each platform and the manufacterer of the console
+
+Platform-matches to Platform in tGameSales.csv
+Platform Full-Full name of the platform
+Manufacterer-Company making the platform
+~~~~~~~~~~~~~~~~~~~~~
+tGameThemes.csv
+Provides themes found in the games. Each game can have more than 1 theme
+
+gameID-used to match with other gameIDS
+themes-Themes found in game
+
+~~~~~~~~~~~~~~~~~~~~~
+tGameTitleBreakdown.csv
+Provides a breakdown of the words used in game titles.
+
+
+kglID-Used to match to kglID in tgameID.csv
+Word-word in the game title
+IsPower:IsWord- are descriptors of the word. (May not be fully accurate)
